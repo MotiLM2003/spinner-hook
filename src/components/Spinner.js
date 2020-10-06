@@ -17,6 +17,10 @@ const Spinner = ({ type }) => {
           </div>
         );
       }
+      case 'square': {
+        return <div className='spDefault square'></div>;
+        break;
+      }
     }
   };
   return <div className='spinner-container'>{renderedSpinner()}</div>;
