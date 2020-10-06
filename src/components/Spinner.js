@@ -1,7 +1,7 @@
 import React from 'react';
 import './spinner.css';
 
-const Spinner = ({ type }) => {
+const Spinner = ({ type, text }) => {
   const renderedSpinner = () => {
     switch (type) {
       case 'spinner': {
@@ -23,7 +23,18 @@ const Spinner = ({ type }) => {
       }
     }
   };
-  return <div className='spinner-container'>{renderedSpinner()}</div>;
+  return (
+    <div className='spinner-container'>
+      <div className='spDefault'>
+        {renderedSpinner()}
+        <div className='spinnerText'>{text}</div>
+      </div>
+    </div>
+  );
 };
 
+Spinner.defaultProps = {
+  type: 'spinner',
+  text: 'Loading...',
+};
 export default Spinner;
