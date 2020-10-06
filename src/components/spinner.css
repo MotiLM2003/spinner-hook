@@ -38,15 +38,15 @@
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  animation: 1.5s bounce infinite both ease-in-out;
-  margin-right: 0.4rem;
+  animation: 2s bounce infinite both ease-in-out;
+  margin-right: 0rem;
 }
 
 .bounce-1 {
   animation-delay: -0.3s;
 }
 .bounce-2 {
-  animation-delay: -0.15s;
+  animation-delay: -0.5s;
 }
 
 @keyframes bounce {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Spinner from './Spinner';
 const App = () => {
-  return <Spinner type='spinner' />;
+  return <Spinner type='dots' />;
 };
 
 export default App;
