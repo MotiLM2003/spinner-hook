@@ -24,7 +24,7 @@
 }
 .spinnerText {
   margin-top: 10rem;
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: #fff;
 }
 
@@ -86,7 +86,7 @@
   height: 0.1rem;
   border: 0.1rem solid rgba(255, 255, 255, 1);
   border-radius: 5%;
-  animation: 6.2s square-spin infinite ease backwards;
+  animation: 6.2s square-spin infinite ease-in-out backwards;
   padding: 0.5rem;
   box-sizing: border-box;
   background-color: #fff;

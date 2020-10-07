@@ -1,12 +1,16 @@
 import React from 'react';
 import './spinner.css';
 
+// custom hooks
+
+import useSpinner from '../hooks/useSpinner';
+
 const Spinner = ({ type, text }) => {
   const renderedSpinner = () => {
     switch (type) {
-      case 'spinner': {
+      case 'spinner':
+      default: {
         return <div className='spDefault spinner'></div>;
-        break;
       }
       case 'dots': {
         return (
@@ -19,7 +23,6 @@ const Spinner = ({ type, text }) => {
       }
       case 'square': {
         return <div className='spDefault square'></div>;
-        break;
       }
     }
   };
